@@ -455,7 +455,9 @@ body.dark footer a {
 }
 
 .scroll-btn:hover {
-    background-color: gray;
+    background-color: transparent;
+    color: var(--color-turquise);
+    border: solid 2px var(--color-turquise);
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
