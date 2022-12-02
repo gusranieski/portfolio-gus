@@ -461,7 +461,22 @@ body.dark footer a {
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    .cards {
+        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 1rem;
+        padding: 20px 40px;
+    }
+
+    .experience {
+        height: fit-content;
+    }
+
+    .cards span {
+        padding: 0 16px;
+    }
+}
 
 /* =================== MEDIA QUERIES (SMALL DEVICES) ====================== */
 @media screen and (max-width: 768px) {
@@ -521,9 +536,15 @@ body.dark footer a {
 
     .skills-types {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 0;
+    }
+
+    /* .skills-types {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
-    }
+    } */
 
     .experience {
         height: fit-content;
