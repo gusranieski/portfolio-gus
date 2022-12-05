@@ -141,6 +141,7 @@ header p {
     border-radius: 20px;
     height: 400px;
     width: 285px;
+    /* box-shadow: 0.1rem 0.2rem 1rem 1px #5e5a5a; */
 }
 
 /* .hero-flex {
@@ -211,7 +212,8 @@ h2 {
 
 .experience {
     /* text-align: center; */
-    height: 1270px;
+    /* height: 1270px; */
+    height: fit-content;
 }
 
 .experience-description {
@@ -262,7 +264,17 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     text-align: center;
-    padding: 0 60px;
+    padding: 20px 60px;
+}
+
+.card img {
+    /* height: 240px; */
+    width: 370px;
+    border-radius: 10px;
+    /* width: 15%;
+    aspect-ratio: 3/2; */
+    object-fit: contain;
+    box-shadow: 0.1rem 0.2rem 1rem 1px #5e5a5a;
 }
 
 .card h3 a {
