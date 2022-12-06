@@ -524,7 +524,7 @@ body.dark footer a {
 @media screen and (max-width: 768px) {
     .hero {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
         height: auto;
         gap: 0;
@@ -545,7 +545,7 @@ body.dark footer a {
 
     .skills-types {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem 0;
     }
 
@@ -568,7 +568,7 @@ body.dark footer a {
 }
 
 /* =================== MEDIA QUERIES (SMALL DEVICES) ====================== */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 736px) {
 
     h2 {
         font-size: 2rem;
@@ -625,7 +625,7 @@ body.dark footer a {
 
     .skills-types {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem 0;
     }
 
