@@ -277,6 +277,32 @@ h2 {
     box-shadow: 0.1rem 0.2rem 1rem 1px #5e5a5a;
 }
 
+.card img:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .card h3 a {
     font-weight: 500;
     font-size: 22px;
