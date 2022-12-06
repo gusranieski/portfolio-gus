@@ -306,7 +306,7 @@ h2 {
 .card h3 a {
     font-weight: 500;
     font-size: 22px;
-    line-height: 32px;
+    line-height: 50px;
     color: var(--color-blue);
 }
 
@@ -324,7 +324,7 @@ h2 {
 
 footer {
     background-color: var(--color-white-smoke);
-    height: 300px;
+    height: 322px;
 }
 
 .contact {
@@ -338,7 +338,6 @@ footer {
     font-size: 42px;
     line-height: 52px;
     color: var(--color-bright-blue);
-
     text-align: center;
 }
 
@@ -347,17 +346,22 @@ footer {
     /* color: var(--color-bright-blue); */
 }
 
+.contact h3 {
+    text-align: center;
+    color: var(--color-blue);
+    padding-top: 20px;
+}
+
 .icons {
     display: flex;
     justify-content: center;
     gap: 60px;
-    /* color: var(--color-santas-grey); */
     font-size: 30px;
-    margin: 50px 0 20px 0;
+    margin: 40px 0 20px 0;
 }
 
 .icons a {
-    color: var(--color-santas-grey);
+    color: var(--color-bright-blue);
 }
 
 .icons a:hover {
@@ -469,7 +473,7 @@ body.dark .header-content i {
 }
 
 body.dark footer a {
-    color: var(--color-santas-grey);
+    color: var(--color-bright-blue);
 }
 
 /*------scroll to up-------*/
@@ -511,13 +515,60 @@ body.dark footer a {
         height: fit-content;
     }
 
-    .cards span {
+    /* .cards span {
         padding: 0 16px;
+    } */
+}
+
+/* =================== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
+@media screen and (max-width: 768px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        height: auto;
+        gap: 0;
+        padding: 2rem;
+    }
+
+    .hero-description {
+        gap: 0.5rem;
+    }
+
+    .skills {
+        padding: 30px 22px;
+    }
+
+    .skills-description p {
+        width: auto;
+    }
+
+    .skills-types {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem 0;
+    }
+
+    .experience-description {
+        padding: 30px 22px;
+    }
+
+    .experience-description p {
+        width: auto;
+    }
+    
+    .card img {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        /* padding: 10px; */
     }
 }
 
 /* =================== MEDIA QUERIES (SMALL DEVICES) ====================== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 
     h2 {
         font-size: 2rem;
