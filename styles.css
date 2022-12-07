@@ -502,7 +502,7 @@ body.dark footer a {
     border: solid 2px var(--color-turquise);
 }
 
-/* =================== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
+/* =================== MEDIA QUERIES (LARGE DEVICES) ====================== */
 @media screen and (max-width: 1024px) {
     .cards {
         grid-template-columns: 1fr;
