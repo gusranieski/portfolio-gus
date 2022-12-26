@@ -9,12 +9,6 @@
     list-style: none;
 }
 
-/* body {
-    max-width: 1238px;
-    margin: 0 auto;
-    padding: 0 27px;
-} */
-
 :root {
     --color-blue: #1E0E62;
     --color-white: #FFFFFF;
@@ -42,7 +36,6 @@ html {
     align-items: center;
     height: 100px;
     width: 100%;
-    /*?*/
     background: var(--color-white);
 }
 
@@ -56,7 +49,6 @@ html {
     border-radius: 100px;
     padding: 9px 30px;
     margin-right: 115px;
-    /* transition: var(--transition); */
     color: var(--color-blue);
     font-weight: 500;
     font-size: 16px;
@@ -97,11 +89,8 @@ header p {
     line-height: 60px;
     color: var(--color-blue);
     height: 169px;
-    /*?*/
     width: 422px;
     height: 169px;
-    /* padding-top: 109px; */
-    /*?*/
 }
 
 .hero-description p {
@@ -109,7 +98,6 @@ header p {
     font-size: 22px;
     line-height: 26px;
     color: var(--color-midnight-express);
-    /* height: 153px; */
     width: 369px;
 }
 
@@ -141,19 +129,10 @@ header p {
     border-radius: 20px;
     height: 400px;
     width: 285px;
-    /* box-shadow: 0.1rem 0.2rem 1rem 1px #5e5a5a; */
 }
-
-/* .hero-flex {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 520px;
-} */
 
 .skills {
     background-color: var(--color-white-smoke);
-    /* height: 550px; */
     display: flex;
     justify-content: center;
     padding: 70px 22px;
@@ -204,15 +183,10 @@ h2 {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    /* text-align: center; */
     color: var(--color-midnight-express);
-    /* width: 283px;
-    height: 78px; */
 }
 
 .experience {
-    /* text-align: center; */
-    /* height: 1270px; */
     height: fit-content;
 }
 
@@ -252,13 +226,6 @@ h2 {
     transition: var(--transition);
 }
 
-/* .experience-description button a {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    color: var(--color-white);
-} */
-
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -268,11 +235,8 @@ h2 {
 }
 
 .card img {
-    /* height: 240px; */
     width: 370px;
     border-radius: 10px;
-    /* width: 15%;
-    aspect-ratio: 3/2; */
     object-fit: contain;
     box-shadow: 0.1rem 0.2rem 1rem 1px #5e5a5a;
 }
@@ -343,7 +307,6 @@ footer {
 
 .contact a:hover {
     color: var(--color-turquise);
-    /* color: var(--color-bright-blue); */
 }
 
 .contact h3 {
@@ -425,7 +388,6 @@ footer p {
 /*------Dark Mode-----*/
 body.dark {
     background: #22272e;
-    /* background: #545d68; */
     color: var(--color-white);
 }
 
@@ -447,8 +409,6 @@ body.dark h1,
 body.dark h2 {
     color: var(--color-bright-blue);
 }
-
-/* body.dark h1, */
 
 body.dark h3,
 body.dark .card a {
@@ -514,10 +474,6 @@ body.dark footer a {
     .experience {
         height: fit-content;
     }
-
-    /* .cards span {
-        padding: 0 16px;
-    } */
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) ====================== */
@@ -556,14 +512,13 @@ body.dark footer a {
     .experience-description p {
         width: auto;
     }
-    
+
     .card img {
         width: 100%;
     }
 
     .cards {
         grid-template-columns: 1fr;
-        /* padding: 10px; */
     }
 }
 
@@ -628,12 +583,6 @@ body.dark footer a {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem 0;
     }
-
-    /* .skills-types {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    } */
 
     .experience {
         height: fit-content;
