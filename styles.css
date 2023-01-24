@@ -73,7 +73,7 @@ header p {
     background: var(--color-white-smoke);
     display: flex;
     justify-content: center;
-    gap: 6.5rem;
+    gap: 3.5rem;
     align-items: center;
     height: 520px;
 }
@@ -86,11 +86,11 @@ header p {
 .hero-description h1 {
     font-weight: 700;
     font-size: 43px;
-    line-height: 60px;
+    line-height: 65px;
     color: var(--color-blue);
     height: 169px;
     width: 422px;
-    height: 169px;
+    height: 125px;
 }
 
 .hero-description p {
@@ -126,9 +126,7 @@ header p {
 }
 
 .hero-photo img {
-    border-radius: 20px;
-    height: 400px;
-    width: 285px;
+    width: 260px;
 }
 
 .skills {
@@ -236,8 +234,7 @@ h2 {
 
 .card img {
     width: 370px;
-    border-radius: 10px;
-    object-fit: contain;
+    height: 210px;
     box-shadow: 0.1rem 0.2rem 1rem 1px #5e5a5a;
 }
 
@@ -349,6 +346,8 @@ footer p {
     display: flex;
     outline: none;
     margin-right: 111px;
+    height: 30px;
+    width: 55px;
 }
 
 .switch span {
@@ -488,7 +487,7 @@ body.dark footer a {
     }
 
     .hero-description {
-        gap: 0.5rem;
+        gap: 1rem;
     }
 
     .skills {
@@ -515,6 +514,7 @@ body.dark footer a {
 
     .card img {
         width: 100%;
+        height: auto;
     }
 
     .cards {
@@ -540,7 +540,7 @@ body.dark footer a {
         justify-items: center;
         height: auto;
         gap: 2rem;
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .hero-description {
@@ -551,10 +551,13 @@ body.dark footer a {
         font-size: 3rem;
         width: 90%;
         height: auto;
+        padding-left: 30px;
     }
 
     .hero-description p {
-        font-size: 1rem;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
         width: 100%;
         text-align: center;
     }
@@ -565,7 +568,7 @@ body.dark footer a {
     }
 
     .hero-description a {
-        width: 200px;
+        width: 300px;
     }
 
     .skills {
@@ -597,8 +600,13 @@ body.dark footer a {
         height: auto;
     }
 
+    .experience-description a {
+        width: 300px;
+    }
+
     .card img {
         width: 100%;
+        object-fit: cover;
     }
 
     .cards {
