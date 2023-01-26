@@ -384,6 +384,10 @@ footer p {
     left: unset;
 }
 
+.header-content button:hover {
+    background-color: var(--color-santas-grey);
+}
+
 /*------Dark Mode-----*/
 body.dark {
     background: #22272e;
