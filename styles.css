@@ -455,6 +455,7 @@ body.dark footer a {
     height: 3rem;
     bottom: 20px;
     right: 10px;
+    z-index: 1;
 }
 
 .scroll-btn p {
