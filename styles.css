@@ -61,14 +61,6 @@ html {
     transition: var(--transition);
 }
 
-header p {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 31px;
-    color: var(--color-blue);
-    margin-left: 111px;
-}
-
 .hero {
     background: var(--color-white-smoke);
     display: flex;
@@ -86,18 +78,46 @@ header p {
 .hero-description h1 {
     font-weight: 700;
     font-size: 43px;
-    line-height: 65px;
+    /* line-height: 65px; */
     color: var(--color-blue);
     height: 169px;
     width: 422px;
 }
 
 .hero-description p {
+    font-family: monospace;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 26px;
     color: var(--color-midnight-express);
     width: 369px;
+}
+
+.cursor {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    border-color: var(--color-turquise);
+    width: 6.5ch;
+    animation: typing 3s steps(30), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    animation-delay: 2s;
+    background: linear-gradient(135deg, #42d392, #647eff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
 }
 
 .hero-btn {
@@ -153,7 +173,8 @@ h2 {
 
 .skills-description p {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: monospace;
     line-height: 32px;
     text-align: center;
     color: var(--color-midnight-express);
@@ -199,7 +220,8 @@ h2 {
 
 .experience-description p {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px;
+    font-family: monospace;
     line-height: 32px;
     text-align: center;
     color: var(--color-midnight-express);
@@ -227,7 +249,7 @@ h2 {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill,400px);
+    grid-template-columns: repeat(auto-fill, 400px);
     justify-content: center;
     /* grid-template-columns: repeat(3, 1fr); */
     gap: 2.5rem;
@@ -279,6 +301,7 @@ h2 {
 }
 
 .card span {
+    font-family: monospace;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -335,6 +358,7 @@ footer {
 footer p {
     font-weight: 500;
     font-size: 18px;
+    font-family: monospace;
     color: var(--color-santas-grey);
     text-align: center;
 }
@@ -348,9 +372,10 @@ footer p {
     cursor: pointer;
     display: flex;
     outline: none;
-    margin-right: 111px;
+    margin: 20px;
     height: 30px;
     width: 55px;
+    box-shadow: 0.1rem 0.2rem 1rem 1px #241c1c;
 }
 
 .switch span {
@@ -416,6 +441,13 @@ body.dark h2 {
     color: var(--color-bright-blue);
 }
 
+body.dark .cursor {
+    background: linear-gradient(135deg, #42d392, #647eff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 body.dark h3,
 body.dark .card a {
     color: #f8f9fa;
@@ -451,8 +483,8 @@ body.dark footer a {
     text-align: center;
     display: none;
     position: fixed;
-    width: 3rem;
     background-color: var(--color-turquise);
+    width: 3rem;
     height: 3rem;
     bottom: 20px;
     right: 10px;
@@ -557,14 +589,14 @@ body.dark footer a {
 
     .hero-description h1 {
         font-size: 3rem;
-        width: 90%;
+        width: auto;
+        max-width: 90%;
         height: auto;
-        padding-left: 30px;
+        padding-left: 10px;
     }
 
     .hero-description p {
         font-weight: 500;
-        font-size: 22px;
         line-height: 32px;
         width: 100%;
         text-align: center;
