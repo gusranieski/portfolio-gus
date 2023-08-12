@@ -355,7 +355,9 @@ footer {
     transition: var(--transition);
 }
 
-footer p {
+.made {
+    display: flex;
+    flex-direction: column;
     font-weight: 500;
     font-size: 18px;
     font-family: monospace;
