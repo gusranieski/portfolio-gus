@@ -36,3 +36,8 @@ scrollBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+  // Obtener el año actual
+  const currentYear = new Date().getFullYear();
+  // Insertar el año en el elemento con id "year"
+  document.getElementById('year').textContent = currentYear;
